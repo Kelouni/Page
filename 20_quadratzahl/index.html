@@ -1,31 +1,34 @@
 <html>
-	<head>
-		<title>Berechnung</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<script>
-			"use strict";
 
-			// Programmiere hier die Funktion calc(number)
-			function clicked(number) {
-             var q = number * number; 
-            
-             // 3 hoch 2 ist 9.
-             var s = "Hallo" + q + "!!!";
-             return s; 
-             }
-			function clicked() {
-				var input = document.getElementById("idInput").value;
-				var output = calc(input);
-				document.getElementById("idOutput").innerHTML = output;
-			}
+<head>
+    <title>Berechnung</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script>
+        "use strict";
 
-		</script>
-	</head>
+        // Programmiere hier die Funktion calc(number)
+        function clicked(number) {
+            var q = number * number;
 
-	<body>
-		<h1>Berechnung</h1>
-		Eingabe: <input id="idInput" type="text" value=""><br /><br />
-		<button onClick="clicked();">Berechne etwas!</button><br /><br />
-		<div id="idOutput">Hier kommt beim Klicken auf den Button eine Ausgabe.</div>
-	</body>
+            // 3 hoch 2 ist 9.
+            var s = "Hallo" + q + "!!!";
+            return s;
+        }
+        
+        function clicked() {
+            var input = document.getElementById("idInput").value;
+            var output = calc(input);
+            document.getElementById("idOutput").innerHTML = output;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Berechnung</h1>
+    Eingabe: <input id="idInput" type="text" value=""><br /><br />
+    <button onClick="clicked();">Berechne etwas!</button><br /><br />
+    <div id="idOutput">Hier kommt beim Klicken auf den Button eine Ausgabe.</div>
+</body>
+
 </html>
